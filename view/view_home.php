@@ -42,8 +42,7 @@
                         <input name="isPublic" type="radio" id="test2" value="0" />
                         <label for="test2">Private Note</label>
                     </p>
-                    <?php $_SESSION['token'] = md5(uniqid(mt_rand(), true)); ?>
-                    <input type="hidden" name="csrf" value="<?php echo $_SESSION['token']; ?>">
+                    
                     <input class="btn waves-effect waves-light" type="submit" value="Add Note" />
                   </form>
             </div>
