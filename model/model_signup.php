@@ -52,6 +52,6 @@ function sendEmail($emailTo){
 	}
 }
 
-echo "model_signup included"."<br />";
+// echo "model_signup included"."<br />";
 
  ?>

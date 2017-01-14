@@ -11,7 +11,7 @@ include_once('../model/model_signup.php');
 add_user($_POST['username'], $_POST['password']);
 
 //sends email to user
-sendEmail($_GET[username])
+sendEmail($_GET[username]);
 
 // store the username during this session, and redirect to home page.
 $_SESSION['current_user'] = $_POST['username'];
