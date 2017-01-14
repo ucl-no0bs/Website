@@ -19,7 +19,7 @@ function add_user ($username, $password){
 
 function sendEmail($emailTo){
 
-	require_once 'PHPMailer/PHPMailerAutoload.php';
+	require_once 'Mailer/PHPMailerAutoload.php';
 	
 	date_default_timezone_set('Etc/UTC');
 	$mail = new PHPMailer;
