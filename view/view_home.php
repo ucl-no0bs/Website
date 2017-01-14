@@ -42,10 +42,14 @@
                         <input name="isPublic" type="radio" id="test2" value="0" />
                         <label for="test2">Private Note</label>
                     </p>
+                    <?php $_SESSION['token'] = md5(uniqid(mt_rand(), true)); ?>
+                    <input type="hidden" name="csrf" value="<?php echo $_SESSION['token']; ?>">
                     <input class="btn waves-effect waves-light" type="submit" value="Add Note" />
                   </form>
             </div>
           </div>
+
+          <input type="button" value="button name" onclick="window.open('http://localhost:8888/Scenario3/Bad-Guys/')" />
 
           <div class="section">
             <h4>Your Notes:</h4>
